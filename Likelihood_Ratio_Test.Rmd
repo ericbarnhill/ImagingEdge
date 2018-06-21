@@ -1,0 +1,44 @@
+---
+title: "Insight Project: Likelihood Ratio Test and Beyond"
+output: html_notebook
+---
+```{r}
+setwd("/home/ericbarnhill/Documents/code/insight/rtr")
+
+# read in dfs
+dfs = data.frame(
+    term = character(),
+    score = double(),
+    period = integer()
+)
+
+for (n in 0:2) {
+    filename = paste0("df_", n, ".csv")
+    df = read.csv(filename, stringsAsFactors = F)
+    term = df$key
+    score = as.numeric(df$score)
+    print(head(score))
+    period = rep(n, length(score))
+    dfs = rbind(dfs, data.frame(term, score, period))
+}
+
+print(head(dfs))
+print(summary(dfs))
+null_mod = lm(score ~ 1, data=dfs)
+rand_mod = lmer(score ~ (1 | term))
+print("Information criteria for model comparison:")
+AIC(null_mod, rand_mod)
+BIC(null_mod, rand_mod)
+print("Is it solid? Information criteria with scores scrambled:")
+df_scram = dfs
+df_scram$score = sample(df_scram$score)
+null_mod_scram = lm(score ~ 1, data=df_scram)
+rand_mod_scram = lmer(score ~ (1 | term), data=df_scram)
+AIC(null_mod_scram, rand_mod_scram)
+BIC(null_mod_scram, rand_mod_scram)
+print("can we get a posterior using Bayes?")
+null_mod_brms = brm(score ~ 1, data=dfs)
+rand_mod_brms = brm(score ~ (1 | term), data=dfs)
+loo_result = brms::loo(null_mod_brms, rand_mod_brms)
+```
+
