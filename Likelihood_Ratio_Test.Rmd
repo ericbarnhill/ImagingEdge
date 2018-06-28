@@ -4,6 +4,7 @@ output: html_notebook
 ---
 ```{r}
 setwd("/home/ericbarnhill/Documents/code/insight/rtr")
+require(lme4)
 
 # read in dfs
 dfs = data.frame(
@@ -25,7 +26,7 @@ for (n in 0:2) {
 print(head(dfs))
 print(summary(dfs))
 null_mod = lm(score ~ 1, data=dfs)
-rand_mod = lmer(score ~ (1 | term))
+rand_mod = lmer(score ~ (1 | term), data=dfs)
 print("Information criteria for model comparison:")
 AIC(null_mod, rand_mod)
 BIC(null_mod, rand_mod)
@@ -36,9 +37,9 @@ null_mod_scram = lm(score ~ 1, data=df_scram)
 rand_mod_scram = lmer(score ~ (1 | term), data=df_scram)
 AIC(null_mod_scram, rand_mod_scram)
 BIC(null_mod_scram, rand_mod_scram)
-print("can we get a posterior using Bayes?")
-null_mod_brms = brm(score ~ 1, data=dfs)
-rand_mod_brms = brm(score ~ (1 | term), data=dfs)
-loo_result = brms::loo(null_mod_brms, rand_mod_brms)
+#print("can we get a posterior using Bayes?")
+#null_mod_brms = brm(score ~ 1, data=dfs)
+#rand_mod_brms = brm(score ~ (1 | term), data=dfs)
+#loo_result = brms::loo(null_mod_brms, rand_mod_brms)
 ```
 
