@@ -1,28 +1,21 @@
-DEBUG:matplotlib.backends:backend module://ipykernel.pylab.backend_inline version unknown
-ERROR:sqlalchemy.pool.QueuePool:Exception during reset or similar
-Traceback (most recent call last):
-  File "/home/ericbarnhill/anaconda3/envs/ecb/lib/python3.6/site-packages/Bio/Entrez/Parser.py", line 384, in startElementHandler
-    current.append(object)
-AttributeError: 'StructureElement' object has no attribute 'append'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ericbarnhill/anaconda3/envs/ecb/lib/python3.6/site-packages/sqlalchemy/pool.py", line 709, in _finalize_fairy
-    fairy._reset(pool)
-  File "/home/ericbarnhill/anaconda3/envs/ecb/lib/python3.6/site-packages/sqlalchemy/pool.py", line 880, in _reset
-    pool._dialect.do_rollback(self)
-  File "/home/ericbarnhill/anaconda3/envs/ecb/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 457, in do_rollback
-    dbapi_connection.rollback()
-psycopg2.OperationalError: terminating connection due to administrator command
-server closed the connection unexpectedly
-	This probably means the server terminated abnormally
-	before or while processing the request.
-
-DEBUG:matplotlib.backends:backend module://ipykernel.pylab.backend_inline version unknown
-DEBUG:matplotlib.backends:backend module://ipykernel.pylab.backend_inline version unknown
-DEBUG:matplotlib.backends:backend module://ipykernel.pylab.backend_inline version unknown
-DEBUG:matplotlib.backends:backend module://ipykernel.pylab.backend_inline version unknown
+ERROR:root:File `'rtr.ipynb.py'` not found.
+INFO:root:creating engine:
+INFO:root:- postgresql://ericbarnhill:carter0109@localhost/rtr_db
+INFO:root:- ['rtr_abstracts', 'rtr_keywords']
+INFO:root:rtr_abstracts table already exists. Columns are:
+INFO:root::abstract_1 || rtr_abstracts.abstract
+INFO:root::date_1 + rtr_abstracts.date
+INFO:root::keywords_1 || rtr_abstracts.keywords
+INFO:root:Query from 2015-01-01 to 2015-04-01
+INFO:root:Length of results: 31085
+INFO:root:Query from 2015-02-01 to 2015-05-01
+INFO:root:Length of results: 33697
+INFO:root:Query from 2015-03-01 to 2015-06-01
+INFO:root:Length of results: 34763
+INFO:root:Query from 2015-04-01 to 2015-07-01
+INFO:root:Length of results: 34978
+INFO:root:Query from 2015-05-01 to 2015-08-01
+INFO:root:Length of results: 36419
 INFO:root:Query from 2015-06-01 to 2015-09-01
 INFO:root:Length of results: 36776
 INFO:root:Query from 2015-07-01 to 2015-10-01
@@ -37,16 +30,6 @@ INFO:root:Query from 2015-11-01 to 2016-02-01
 INFO:root:Length of results: 33412
 INFO:root:Query from 2015-12-01 to 2016-03-01
 INFO:root:Length of results: 35073
-INFO:root:Query from 2016-01-01 to 2016-04-01
-INFO:root:Length of results: 37295
-INFO:root:Query from 2016-02-01 to 2016-05-01
-INFO:root:Length of results: 38128
-INFO:root:Query from 2016-03-01 to 2016-06-01
-INFO:root:Length of results: 37749
-INFO:root:Query from 2016-04-01 to 2016-07-01
-INFO:root:Length of results: 37450
-INFO:root:Query from 2016-05-01 to 2016-08-01
-INFO:root:Length of results: 37587
 INFO:root:Abstract 0...
 INFO:root:Abstract 1000...
 INFO:root:Abstract 2000...
@@ -71,9 +54,3 @@ INFO:root:Abstract 20000...
 INFO:root:Abstract 21000...
 INFO:root:Abstract 22000...
 INFO:root:Abstract 23000...
-INFO:root:Abstract 24000...
-INFO:root:Abstract 25000...
-INFO:root:Abstract 26000...
-INFO:root:Abstract 27000...
-INFO:root:Abstract 28000...
-INFO:root:Abstract 29000...
