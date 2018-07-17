@@ -309,3 +309,96 @@ INFO:root:Top node is trending term: weighted imaging
 INFO:root:Top node is trending term: structural changes
 INFO:root:Top node is trending term: malignant tumor
 INFO:root:Top node is trending term: computed tomography scans
+INFO:root:df length: (2328, 3)
+INFO:root:filtered df length: (921, 3)
+INFO:root:number of positive trends:770
+INFO:root:creating engine:
+INFO:root:- postgresql://ericbarnhill:carter0109@localhost/rtr_db
+INFO:root:- ['rtr_abstracts', 'rtr_keywords']
+INFO:root:Top node is trending term: early detection
+INFO:root:Top node is trending term: minimally invasive
+INFO:root:Top node is trending term: imaging technique
+INFO:root:Top node is trending term: body weight
+INFO:root:Top node is trending term: animal models
+INFO:root:Top node is trending term: imaging techniques
+INFO:root:Top node is trending term: contrast agent
+INFO:root:Top node is trending term: time point
+INFO:root:Top node is trending term: real time
+INFO:root:Top node is trending term: time points
+INFO:root:Top node is trending term: large number
+INFO:root:Top node is trending term: adverse effects
+INFO:root:Top node is trending term: radiation dose
+INFO:root:Top node is trending term: drug delivery
+INFO:root:Top node is trending term: mouse model
+INFO:root:Top node is trending term: vascular diseases
+INFO:root:Top node is trending term: positively correlated
+INFO:root:Top node is trending term: surgical intervention
+INFO:root:Top node is trending term: breast cancer
+INFO:root:Top node is trending term: et al
+INFO:root:Top node is trending term: even though
+INFO:root:Top node is trending term: weighted imaging
+INFO:root:Top node is trending term: structural changes
+INFO:root:Top node is trending term: malignant tumor
+INFO:root:Top node is trending term: computed tomography scans
+INFO:root:df length: (2328, 3)
+INFO:root:filtered df length: (921, 3)
+INFO:root:number of positive trends:770
+INFO:root:creating engine:
+INFO:root:- postgresql://ericbarnhill:carter0109@localhost/rtr_db
+INFO:root:- ['rtr_abstracts', 'rtr_keywords']
+INFO:root:Top node is trending term: early detection
+INFO:root:Top node is trending term: minimally invasive
+INFO:root:Top node is trending term: imaging technique
+INFO:root:Top node is trending term: body weight
+INFO:root:Top node is trending term: animal models
+INFO:root:Top node is trending term: imaging techniques
+INFO:root:Top node is trending term: contrast agent
+INFO:root:Top node is trending term: time point
+INFO:root:Top node is trending term: real time
+INFO:root:Top node is trending term: time points
+INFO:root:Top node is trending term: large number
+INFO:root:Top node is trending term: adverse effects
+INFO:root:Top node is trending term: radiation dose
+INFO:root:Top node is trending term: drug delivery
+INFO:root:Top node is trending term: mouse model
+INFO:root:Top node is trending term: vascular diseases
+INFO:root:Top node is trending term: positively correlated
+INFO:root:Top node is trending term: surgical intervention
+INFO:root:Top node is trending term: breast cancer
+INFO:root:Top node is trending term: et al
+INFO:root:Top node is trending term: even though
+INFO:root:Top node is trending term: weighted imaging
+INFO:root:Top node is trending term: structural changes
+INFO:root:Top node is trending term: malignant tumor
+INFO:root:Top node is trending term: computed tomography scans
+INFO:root:df length: (2328, 3)
+INFO:root:filtered df length: (921, 3)
+INFO:root:number of positive trends:770
+INFO:root:creating engine:
+INFO:root:- postgresql://ericbarnhill:carter0109@localhost/rtr_db
+INFO:root:- ['rtr_abstracts', 'rtr_keywords']
+INFO:root:Top node is trending term: early detection
+INFO:root:Top node is trending term: minimally invasive
+INFO:root:Top node is trending term: imaging technique
+INFO:root:Top node is trending term: body weight
+INFO:root:Top node is trending term: animal models
+INFO:root:Top node is trending term: imaging techniques
+INFO:root:Top node is trending term: contrast agent
+INFO:root:Top node is trending term: time point
+INFO:root:Top node is trending term: real time
+INFO:root:Top node is trending term: time points
+INFO:root:Top node is trending term: large number
+INFO:root:Top node is trending term: adverse effects
+INFO:root:Top node is trending term: radiation dose
+INFO:root:Top node is trending term: drug delivery
+INFO:root:Top node is trending term: mouse model
+INFO:root:Top node is trending term: vascular diseases
+INFO:root:Top node is trending term: positively correlated
+INFO:root:Top node is trending term: surgical intervention
+INFO:root:Top node is trending term: breast cancer
+INFO:root:Top node is trending term: et al
+INFO:root:Top node is trending term: even though
+INFO:root:Top node is trending term: weighted imaging
+INFO:root:Top node is trending term: structural changes
+INFO:root:Top node is trending term: malignant tumor
+INFO:root:Top node is trending term: computed tomography scans
