@@ -402,3 +402,4 @@ INFO:root:Top node is trending term: weighted imaging
 INFO:root:Top node is trending term: structural changes
 INFO:root:Top node is trending term: malignant tumor
 INFO:root:Top node is trending term: computed tomography scans
+DEBUG:stem:System call: tor --version (runtime: 0.05)
